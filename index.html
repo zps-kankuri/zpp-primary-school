@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>जिल्हा परिषद प्राथमिक शाळा</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #004085;
+            color: white;
+            padding: 40px 10px; /* Increased padding for more height */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column; /* Stack items vertically */
+            min-height: 180px; /* Set a minimum height to avoid overlap */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-align: center; /* Center align the title */
+        }
+
+        /* Home Icon */
+        .home-icon {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            background: #002752;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+
+        /* Navigation Links */
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            background-color: #004085;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin: 0 10px;
+            border: 2px solid white;
+        }
+
+        /* Main Content */
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .details {
+            font-size: 1.1em;
+            margin: 15px 0;
+        }
+
+        /* Information Section */
+        .information {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #004085;
+        }
+        .information h2 {
+            text-align: center;
+            color: #004085;
+        }
+        .information p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            margin: 30px 0;
+        }
+        .gallery h2 {
+            color: #004085;
+            text-align: center;
+        }
+        .gallery img {
+            width: 600px; 
+            height: 600px; 
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #e9ecef;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            border-top: 2px solid #004085;
+        }
+        .contact h2 {
+            color: #004085;
+        }
+        .contact p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #004085;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* PDF Page */
+        .pdf-page {
+            padding: 20px;
+            text-align: center;
+            display: none;
+        }
+
+        iframe {
+            width: 80%;
+            height: 600px;
+            border: none;
+        }
+
+        /* Button Format for "PDF" and "Home" */
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            background-color: #004085;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin: 0 10px;
+            border: 2px solid white;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="javascript:void(0);" class="home-icon" onclick="showHome()">🏠 मुख्यपृष्ठ</a>
+        <h1>जिल्हा परिषद प्राथमिक शाळा</h1>
+        <div class="nav-links">
+            <a href="javascript:void(0);" onclick="showPDFPage()">माहिती अधिकार PDF पाहा</a>
+        </div>
+    </header>
+
+    <!-- Logo below header -->
+    <div class="container">
+        <img src="logo.jpg" alt="School Logo" style="max-height: 150px; max-width: 250px; margin-bottom: 20px;"> <!-- Increased logo size -->
+    </div>
+
+    <!-- Main Content Page -->
+    <div id="home-page" class="container">
+        <div class="details">
+            <p><strong>शाळेचे नाव:</strong> जिल्हा परिषद प्राथमिक शाळा</p>
+            <p><strong>गाव:</strong> कनकुरी</p>
+            <p><strong>तालुका:</strong> राहाता</p>
+            <p><strong>जिल्हा:</strong> अहमदनगर</p>
+            <p><strong>UDISE कोड:</strong> 27261003201</p>
+            <p><strong>पिन कोड:</strong> 423107</p>
+        </div>
+
+        <!-- Replaced Information Section -->
+        <div class="information">
+            <h2>महत्त्वाची माहिती</h2>
+            <ul>
+                <li>फार जुनी शाळा असून शाळेची स्थापना १/६/१९४९ ची आहे.</li>
+                <li>सदर शाळा साईभूमी शिर्डी पासून ३ कि. मि. अंतरावर आहे. या शाळेतून आतापर्यंत शिक्षण घेतलेले विद्यार्थी डॉक्टर, इंजीनियर तसेच इतरही अनेक क्षेत्रात उच्च पदावर कार्यरत आहेत.</li>
+                <li>शाळेत ई. १ ली ते ४ थी चे वर्ग आहेत. सर्व वर्ग डिजिटल आहेत.</li>
+                <li>दरवर्षी शाळेत सहशालेय उपक्रम, क्रीडास्पर्धा, सहल, सांस्कृतिक कार्यक्रम, स्वातंत्राचा अमृत महोत्सव ई. उपक्रम राबविले जातात. शाळेचा पट दिवसेंदिवस वाढत असून विविध स्पर्धांमध्ये विद्ध्यार्थ्यानी उत्तम यश संपादन केलेले आहे.</li>
+                <li>मा. ना. श्री राधाकृष्ण विखे पाटील यांनी शाळेला Interactive Board व Water Purifier दिले असून त्यांचे शाळेला कायमच सहकार्य असते.</li>
+                <li>शाळेत शासनामार्फत दिल्या जाणाऱ्या सर्व प्रकारचा योजना राबविल्या जातात व १००% विद्यार्थ्यांना लाभ दिला जातो.</li>
+                <li>अशी साईनगरी शिर्डी पासून ३ कि. मि. अंतरावर जि. प. प्राथमिक शाळा वसलेली आहे.</li>
+            </ul>
+        </div>
+
+        <!-- Image Gallery Section -->
+        <div class="gallery">
+            <h2>फोटो गॅलरी</h2>
+            <img src="image3.jpg" alt="School Event 1">
+            <img src="image4.jpg" alt="School Event 2">
+            <img src="image5.jpg" alt="School Event 3">
+            <img src="image6.jpg" alt="School Event 4">
+            <img src="image7.jpg" alt="School Event 5">
+            <img src="image8.jpg" alt="School Event 6">
+            <img src="image9.jpg" alt="School Event 7">
+            <img src="image1.jpg" alt="School Building">
+            <img src="image2.jpg" alt="School Function">
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="contact">
+            <h2>संपर्क माहिती</h2>
+            <p><strong>शाळेचा पत्ता:</strong> जिल्हा परिषद प्राथमिक शाळा, गाव: कनकुरी, तालुका: राहाता, जिल्हा: अहमदनगर</p>
+            <p><strong>पिन कोड:</strong> 423107</p>
+            <p><strong>नाव :</strong> श्री. सोनोने सुनिल वासुदेव </p>
+            <p><strong>फोन नंबर:</strong> +91 9860944895</p>
+            <p><strong>ई-मेल:</strong> zps.kankuri@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- PDF Page -->
+    <div id="pdf-page" class="pdf-page">
+        <h2>माहिती अधिकार - जि.प.प्राथ.शाळा कणकुरी</h2>
+        <iframe src="माहिती_अधिकार_जि.प.प्राथ.शाळा_कणकुरी.pdf" title="माहिती अधिकार PDF"></iframe>
+
+        <!-- Navigation Link back to Main Page -->
+        <div class="nav-links">
+            <a href="javascript:void(0);" onclick="showHome()">मुख्यपृष्ठावर परत जा</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 जिल्हा परिषद प्राथमिक शाळा | सर्व हक्क राखीव
+    </footer>
+
+    <script>
+        // JavaScript for switching between pages
+        function showHome() {
+            document.getElementById('home-page').style.display = 'block';
+            document.getElementById('pdf-page').style.display = 'none';
+        }
+
+        function showPDFPage() {
+            document.getElementById('home-page').style.display = 'none';
+            document.getElementById('pdf-page').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
