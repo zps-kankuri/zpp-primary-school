@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>जिल्हा परिषद प्राथमिक शाळा</title>
+    <title>जिल्हा परिषद प्राथमिक शाळा,कनकुरी</title>
     <style>
         /* General Reset */
         body {
@@ -17,39 +17,35 @@
         header {
             background-color: #004085;
             color: white;
-            padding: 40px 10px; /* Increased padding for more height */
+            padding: 20px 10px; /* Adjusted padding for spacing */
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column; /* Stack items vertically */
-            min-height: 180px; /* Set a minimum height to avoid overlap */
+            align-items: center; /* Center-align items vertically */
+            justify-content: space-between; /* Logo and title on left, buttons on right */
+            height: 180px; /* Adjusted height for larger logo */
+        }
+        header img {
+            max-height: 180px; /* Increased logo size */
+            margin-right: 15px; /* Space between logo and title */
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
-            text-align: center; /* Center align the title */
-        }
-
-        /* Home Icon */
-        .home-icon {
-            text-decoration: none;
-            color: white;
-            font-size: 1.2em;
-            background: #002752;
-            padding: 10px 15px;
-            border-radius: 5px;
-            border: 2px solid white;
+            font-size: 3em; /* Increased font size by 2 points */
+            text-align: center;
+            flex-grow: 1; /* Allow title to take available space */
         }
 
         /* Navigation Links */
+        .nav-links {
+            display: flex;
+            gap: 10px; /* Space between navigation buttons */
+        }
         .nav-links a {
             text-decoration: none;
             color: white;
-            background-color: #004085;
-            padding: 10px 20px;
+            background-color: #002752;
+            padding: 10px 15px;
             border-radius: 5px;
             font-size: 1.1em;
-            margin: 0 10px;
             border: 2px solid white;
         }
 
@@ -70,14 +66,17 @@
             padding: 20px;
             margin: 20px 0;
             border-left: 5px solid #004085;
+            text-align: left; /* Left-aligned text */
         }
         .information h2 {
             text-align: center;
             color: #004085;
         }
-        .information p {
+        .information p,
+        .information ul {
             font-size: 1.1em;
             margin: 10px 0;
+            padding-left: 20px; /* Indentation for list items */
         }
 
         /* Gallery Section */
@@ -89,10 +88,10 @@
             text-align: center;
         }
         .gallery img {
-            width: 600px; 
-            height: 600px; 
-            margin: 10px;
-            border-radius: 5px;
+            width: 700px; 
+            height: 500px; 
+            margin: 15px;
+            border-radius: 7px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
@@ -101,11 +100,23 @@
             background-color: #e9ecef;
             padding: 20px;
             margin-top: 20px;
-            text-align: center;
             border-top: 2px solid #004085;
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Space between image and text */
+        }
+        .contact img {
+            width: 400px; /* Doubled width */
+            height: 400px; /* Doubled height */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .contact-info {
+            flex-grow: 1;
         }
         .contact h2 {
             color: #004085;
+            text-align: center;
         }
         .contact p {
             margin: 5px 0;
@@ -135,48 +146,33 @@
             height: 600px;
             border: none;
         }
-
-        /* Button Format for "PDF" and "Home" */
-        .nav-links a {
-            text-decoration: none;
-            color: white;
-            background-color: #004085;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1.1em;
-            margin: 0 10px;
-            border: 2px solid white;
-        }
-
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <a href="javascript:void(0);" class="home-icon" onclick="showHome()">🏠 मुख्यपृष्ठ</a>
-        <h1>जिल्हा परिषद प्राथमिक शाळा</h1>
+        <!-- Logo -->
+        <img src="logo.jpg" alt="School Logo">
+        <!-- Title -->
+        <h1>जिल्हा परिषद प्राथमिक शाळा,कनकुरी</h1>
+        <!-- Navigation Links -->
         <div class="nav-links">
+            <a href="javascript:void(0);" onclick="showHome()">🏠 मुख्यपृष्ठ</a>
             <a href="javascript:void(0);" onclick="showPDFPage()">माहिती अधिकार PDF पाहा</a>
         </div>
     </header>
 
-    <!-- Logo below header -->
-    <div class="container">
-        <img src="logo.jpg" alt="School Logo" style="max-height: 150px; max-width: 250px; margin-bottom: 20px;"> <!-- Increased logo size -->
-    </div>
-
     <!-- Main Content Page -->
     <div id="home-page" class="container">
         <div class="details">
-            <p><strong>शाळेचे नाव:</strong> जिल्हा परिषद प्राथमिक शाळा</p>
-            <p><strong>गाव:</strong> कनकुरी</p>
+            <p><strong>शाळेचे नाव:</strong> जिल्हा परिषद प्राथमिक शाळा,कनकुरी</p>
             <p><strong>तालुका:</strong> राहाता</p>
-            <p><strong>जिल्हा:</strong> अहमदनगर</p>
+            <p><strong>जिल्हा: अहिल्यानगर</strong> </p>
             <p><strong>UDISE कोड:</strong> 27261003201</p>
             <p><strong>पिन कोड:</strong> 423107</p>
         </div>
 
-        <!-- Replaced Information Section -->
+        <!-- Information Section -->
         <div class="information">
             <h2>महत्त्वाची माहिती</h2>
             <ul>
@@ -193,25 +189,28 @@
         <!-- Image Gallery Section -->
         <div class="gallery">
             <h2>फोटो गॅलरी</h2>
-            <img src="image3.jpg" alt="School Event 1">
-            <img src="image4.jpg" alt="School Event 2">
-            <img src="image5.jpg" alt="School Event 3">
-            <img src="image6.jpg" alt="School Event 4">
-            <img src="image7.jpg" alt="School Event 5">
-            <img src="image8.jpg" alt="School Event 6">
-            <img src="image9.jpg" alt="School Event 7">
-            <img src="image1.jpg" alt="School Building">
-            <img src="image2.jpg" alt="School Function">
+            <img src="image1.jpg" alt="School Event 1">
+            <img src="image2.jpg" alt="School Event 2">
+            <img src="image3.jpg" alt="School Event 3">
+            <img src="image4.jpg" alt="School Event 4">
+            <img src="image5.jpg" alt="School Event 5">
+            <img src="image6.jpg" alt="School Event 6">
+            <img src="image7.jpg" alt="School Event 7">
+            <img src="image8.jpg" alt="School Event 8">
+            <img src="image9.jpg" alt="School Event 9">
         </div>
 
         <!-- Contact Information Section -->
         <div class="contact">
-            <h2>संपर्क माहिती</h2>
-            <p><strong>शाळेचा पत्ता:</strong> जिल्हा परिषद प्राथमिक शाळा, गाव: कनकुरी, तालुका: राहाता, जिल्हा: अहमदनगर</p>
-            <p><strong>पिन कोड:</strong> 423107</p>
-            <p><strong>नाव :</strong> श्री. सोनोने सुनिल वासुदेव </p>
-            <p><strong>फोन नंबर:</strong> +91 9860944895</p>
-            <p><strong>ई-मेल:</strong> zps.kankuri@gmail.com</p>
+            <img src="image10.jpg" alt="Contact Image">
+            <div class="contact-info">
+                <h2>संपर्क माहिती</h2>
+                <p><strong>शाळेचा पत्ता:</strong> जिल्हा परिषद प्राथमिक शाळा, गाव: कनकुरी, तालुका: राहाता, जिल्हा: अहिल्यानगर</p>
+                <p><strong>पिन कोड:</strong> 423107</p>
+                <p><strong>नाव :</strong> श्री. सोनोने सुनिल वासुदेव </p>
+                <p><strong>फोन नंबर:</strong> +91 9860944895</p>
+                <p><strong>ई-मेल:</strong> zps.kankuri@gmail.com</p>
+            </div>
         </div>
     </div>
 
